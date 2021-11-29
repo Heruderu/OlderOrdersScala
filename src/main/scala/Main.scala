@@ -8,7 +8,7 @@ import java.time.format.{DateTimeFormatter, DateTimeParseException}
 import java.util
 import java.util.{HashMap, List}
 
-@main def hello(start: String, end: String) : Unit =
+@main def main(appName: String, start: String, end: String) : Unit =
   createRandomOrders()
 
   val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
