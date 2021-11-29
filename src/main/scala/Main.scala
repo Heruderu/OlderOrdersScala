@@ -33,6 +33,10 @@ import java.util.{HashMap, List}
 
     olderProductsMap.keySet().forEach( key => {
       println(key + " months: " + olderProductsMap.get(key).size)
+      olderProductsMap.get(key).forEach( prod => {
+        println(prod.name + " - creation date: " + prod.creationDate.format(formatter))
+      })
+      println()
     })
   catch
     case e: DateTimeParseException => println("Arguments of Date and Time should follow the format: \"yyyy-MM-dd HH:mm:ss\"")

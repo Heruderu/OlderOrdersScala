@@ -14,7 +14,7 @@ object Orders {
   var prods: util.List[Product] = new util.ArrayList[Product]
   val numProducts = 20
   val maxNumItems = 5
-  val numOrders = 1000
+  val numOrders = 20
   val minYear = 2018
   val maxYear = 2021
   val percentageOfCurrentYearProducts = 90
